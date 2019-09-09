@@ -18,8 +18,7 @@ $ echo hello
 
 Copy and paste the output below.
 ----------
-
-
+hello
 
 ==========
 2. Type:
@@ -28,8 +27,7 @@ $ echo hello there
 
 Copy and paste the output below.
 ----------
-
-
+hello there
 
 ==========
 3. Type:
@@ -38,16 +36,14 @@ $ echo good mornin'
 
 Copy and paste the output below.
 ----------
-
-
+No Output
 
 ==========
 4. Uh-oh... we're stuck!
 
 Type [CTRL + C] to get your prompt back.
 ----------
-
-
+v314-ent-016:~ student$ 
 
 ==========
 5. Say good mornin' again with quotes!
@@ -56,8 +52,7 @@ $ echo "good mornin'"
 
 Copy and paste the output below.
 ----------
-
-
+good mornin' 
 
 ==========
 6. There are some other symbols that have special meanings if you don't quote them.  For example, > brings up a different prompt.  Try *.
@@ -66,7 +61,8 @@ $ echo *
 
 What happens?
 ----------
-
+2 AMALogger20190109.log AMALogger20190308.log AMALogger20190828.log AMALogger20190904.log AMALogger20190905.log Adlm Adobe Applications Desktop Documents Downloads Library MPLABXProjects Movies Music Pictures Public QLData Things aardvark foo ipe.properties isus lemon mtec1002 pymel.log xgen
+v314-ent-016:~ student$ 
 
 
 ==========
@@ -74,7 +70,7 @@ What happens?
 
 Write the command that you used below:
 ----------
-
+Clear
 
 
 ==========
@@ -87,7 +83,12 @@ $ curl google.com
 
 Copy and paste the output below.
 ----------
-
+<HTML><HEAD><meta http-equiv="content-type" content="text/html;charset=utf-8">
+<TITLE>301 Moved</TITLE></HEAD><BODY>
+<H1>301 Moved</H1>
+The document has moved
+<A HREF="http://www.google.com/">here</A>.
+</BODY></HTML>
 
 
 ==========
@@ -97,15 +98,18 @@ $ curl www.google.com
 
 Copy and paste the output below, but not the whole thing!  Just copy up to the part that has the title tags (<title>......</title>).
 ----------
-
-
+<!doctype html><html itemscope="" itemtype="http://schema.org/WebPage" lang="en"><head>
 
 ==========
 10. That's great, but what if I want to save the file?  What flag/option and option argument would I use to download the page to a file called google.html?  Run it to download the URL www.google.com.
 
 Write the command you used below.  Also copy and paste the output below.
 ----------
-
+curl -o google.html www.google.com 
+ % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100 11754    0 11754    0     0   127k      0 --:--:-- --:--:-- --:--:--  127k
+v314-ent-016:~ student$ 
 
 
 ==========
@@ -113,7 +117,12 @@ Write the command you used below.  Also copy and paste the output below.
 
 Write the command you used to determine your directory.  Also, copy and paste the output below.
 ----------
+pwd
 
+% Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100  5690  100  5690    0     0   120k      0 --:--:-- --:--:-- --:--:--  120k
+v314-ent-016:~ student$ 
 
 
 ==========
@@ -137,7 +146,10 @@ Use ls to verify that it downloaded.
 
 Write down the command that you used to download the file below.  Additionally, write the output of the command below.
 ----------
-
+curl -o mtec1002-lab-02.zip 
+ % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100   162  100   162    0     0     92      0  0:00:01  0:00:01 --:--:--    92
 
 
 ==========
@@ -145,7 +157,7 @@ Write down the command that you used to download the file below.  Additionally, 
 
 Write down the command that you used to uncompress the file.
 ----------
-
+unzip .(file) 
 
 
 ==========
@@ -153,8 +165,7 @@ Write down the command that you used to uncompress the file.
 
 Copy and paste the output below.
 ----------
-
-
+mtec1002-lab-02.zip
 
 ==========
 We're going to mess around with archiving and compressing files.  We'll make a directory with a file in it... archive and compress it.... and uncompress it elsewhere.
@@ -164,7 +175,17 @@ We're going to mess around with archiving and compressing files.  We'll make a d
 
 Copy and paste the output below.
 ----------
-
+2			Downloads		google.html
+AMALogger20190109.log	Library			ipe.properties
+AMALogger20190308.log	MPLABXProjects		isus
+AMALogger20190828.log	Movies			lemon
+AMALogger20190904.log	Music			mtec1002
+AMALogger20190905.log	Pictures		mtec1002-lab-02.zip
+Adlm			Public			new
+Adobe			QLData			pymel.log
+Applications		Things			stuff
+Desktop			aardvark		xgen
+Documents		foo
 
 
 ==========
@@ -176,7 +197,7 @@ List the files in the directory you're currently in (which should be stuff).
 
 Copy and paste the output below.
 ----------
-
+hello.txt
 
 
 ==========
@@ -188,7 +209,17 @@ List the files in the directory you're currently in (which should be home).
 
 Copy and paste the output below.
 ----------
-
+2			Downloads		google.html
+AMALogger20190109.log	Library			ipe.properties
+AMALogger20190308.log	MPLABXProjects		isus
+AMALogger20190828.log	Movies			lemon
+AMALogger20190904.log	Music			mtec1002
+AMALogger20190905.log	Pictures		mtec1002-lab-02.zip
+Adlm			Public			new
+Adobe			QLData			pymel.log
+Applications		Things			stuff
+Desktop			aardvark		stuff.tar
+Documents		foo			xgen
 
 
 ==========
@@ -198,7 +229,17 @@ $ tar -cvf stuff.tar stuff
 
 Copy and paste the output below.
 ----------
-
+2			Downloads		google.html
+AMALogger20190109.log	Library			ipe.properties
+AMALogger20190308.log	MPLABXProjects		isus
+AMALogger20190828.log	Movies			lemon
+AMALogger20190904.log	Music			mtec1002
+AMALogger20190905.log	Pictures		mtec1002-lab-02.zip
+Adlm			Public			new
+Adobe			QLData			pymel.log
+Applications		Things			stuff
+Desktop			aardvark		stuff.tar
+Documents		foo			xgen
 
 
 ==========
@@ -207,6 +248,17 @@ Copy and paste the output below.
 Copy and paste the output below. (It should contain stuff.tar)
 ----------
 
+2			Downloads		google.html
+AMALogger20190109.log	Library			ipe.properties
+AMALogger20190308.log	MPLABXProjects		isus
+AMALogger20190828.log	Movies			lemon
+AMALogger20190904.log	Music			mtec1002
+AMALogger20190905.log	Pictures		mtec1002-lab-02.zip
+Adlm			Public			new
+Adobe			QLData			pymel.log
+Applications		Things			stuff
+Desktop			aardvark		stuff.tar
+Documents		foo			xgen
 
 
 ==========
@@ -216,7 +268,17 @@ gzip stuff.tar
 
 List your files again.... you should have a new file with a .gz extension.  Copy and paste the output of your this below.
 ----------
-
+2			Downloads		google.html
+AMALogger20190109.log	Library			ipe.properties
+AMALogger20190308.log	MPLABXProjects		isus
+AMALogger20190828.log	Movies			lemon
+AMALogger20190904.log	Music			mtec1002
+AMALogger20190905.log	Pictures		mtec1002-lab-02.zip
+Adlm			Public			new
+Adobe			QLData			pymel.log
+Applications		Things			stuff
+Desktop			aardvark		stuff.tar.gz
+Documents		foo			xgen
 
 
 ==========
@@ -231,6 +293,17 @@ Change your directory to mtec1002-lab-02.
 List the files.  Copy and paste the output below (stuff.tar.gz should be there).
 ----------
 
+2			Downloads		google.html
+AMALogger20190109.log	Library			ipe.properties
+AMALogger20190308.log	MPLABXProjects		isus
+AMALogger20190828.log	Movies			lemon
+AMALogger20190904.log	Music			mtec1002
+AMALogger20190905.log	Pictures		mtec1002-lab-02
+Adlm			Public			mtec1002-lab-02.zip
+Adobe			QLData			new
+Applications		Things			pymel.log
+Desktop			aardvark		stuff
+Documents		foo			xgen
 
 ==========
 23. You should be in the lab directory.  Let's uncompress the file.
@@ -239,7 +312,7 @@ $ tar -xvf stuff.tar.gz
 
 List the files.  Copy and paste the output below (the folder, stuff, should be there).
 ----------
-
+Error
 
 
 ==========
@@ -258,9 +331,9 @@ REMEMBER to use the -o flag and specifiy a filenmae that ends in .tar.gz
 
 Write out the commands that you used to do this.
 ----------
-
-
+curl -o lemon.tar.gz http://foureyes.github.io/mtec1002/labs/02/secret.tar.gz
 
 ==========
 26. How many files were in the archive.  What were their names?  Write out your answers below.
 ----------
+Lemon,mtec1002, mtec1002-lab-02,mtec1002-lab-02.zip, stuff, stuff.tar. 
